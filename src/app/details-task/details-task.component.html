@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <td>id: {{task.id}} /</td>
+    <td>title: {{task.title}} /</td>
+    <td>dateD: {{task.dateD}} /</td>
+    <td>dateF: {{task.dateF}} /</td>
+    <td>
+      Status: {{task.status}} **
+      Change status: <input type="text" [(ngModel)]="newStatus">
+      <button type="button" (click)="updateStatus()">Update</button>
+      ** /
+    </td>
+    <td>Project: {{task.project}} /</td>
+  </tr>
+</table>

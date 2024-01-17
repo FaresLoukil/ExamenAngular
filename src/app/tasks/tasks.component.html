@@ -1,0 +1,27 @@
+<table>
+  <tr>
+    <td>id</td>
+    <td>title</td>
+    <td>dateD</td>
+    <td>dateF</td>
+    <td>Status</td>
+    <td>Project</td>
+  </tr>
+
+
+    <tr *ngFor="let elem of listTasks">
+      <td> {{elem.id}}
+      </td>
+      <td>{{elem.title}}
+      </td>
+      <td>{{elem.dateD}}
+      </td>
+      <td>{{elem.dateF}}
+      </td>
+      <td>{{elem.status}}
+      </td>
+      <td> {{elem.project}}
+      </td>
+      <td><button [routerLink]="['/task/',elem.id]">Details</button></td>
+    </tr>
+</table>

@@ -1,0 +1,6 @@
+<form [formGroup]="addTaskForm">
+  Title: <input type="text" formControlName="title">
+  Date Debut: <input type="text" value="jj/mm/aaaa" formControlName="dateD">
+  Date Fin: <input type="text" value="jj/mm/aaaa" formControlName="dateF">
+  <button type="button" (click)="addTask()">Add</button>
+</form>

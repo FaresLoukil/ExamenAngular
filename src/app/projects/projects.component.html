@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <td>ID</td>
+    <td>Title</td>
+    <td>Description</td>
+
+  </tr>
+  <tr *ngFor="let p of listProjects">
+    <td>{{p.id}}</td>
+    <td>{{p.title}}</td>
+    <td>{{p.description}}</td>
+    <td><a [routerLink]="['/addTask/',p.id]">Add Task</a></td>
+  </tr>
+</table>
